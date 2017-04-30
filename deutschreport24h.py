@@ -82,7 +82,9 @@ def bericht():
     with open("footer.txt") as readfooter:
         footer = readfooter.read() 
 
-    description = "Alle posts, die @deutschbot mochte, vom "+str(starttime)+" bis zum "+str(stoptime)+". In dieser Zeit wählte @deutschbot "+str(total_posts)+" Beiträge. Die Beiträge erhielten bisher insgesamt "+str(total_rewards)+" als _potentielle_ Auszahlung, mit durchschnittlich "+str(average_rewards)+" pro Beitrag.\n___\n"
+    description = "Alle posts, die @deutschbot mochte, vom "+str(starttime)+" bis zum "+str(stoptime)+
+                  ". In dieser Zeit wählte @deutschbot "+str(total_posts)+" Beiträge. Die Beiträge erhielten bisher insgesamt "+
+                  str(total_rewards)+" als _potentielle_ Auszahlung, mit durchschnittlich "+str(average_rewards)+" pro Beitrag.\n___\n"
 
 
     report = header + "\n" + description + main_report + "\n___\n" + footer
