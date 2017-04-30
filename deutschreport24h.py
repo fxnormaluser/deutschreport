@@ -58,11 +58,11 @@ def bericht():
                                             
                         except:
 
-                            imagelink = "https://steem.io/images/steem.png)"
+                            imagelink = "https://steem.io/images/steem.png"
             
                         if len(imagelink) > 100:
 
-                            imagelink = "https://steem.io/images/steem.png)"
+                            imagelink = "https://steem.io/images/steem.png"
 
                         image=("![main_image](https://img1.steemit.com/256x256/" + imagelink +")")
 
