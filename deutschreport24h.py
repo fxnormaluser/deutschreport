@@ -91,9 +91,9 @@ def bericht():
     
     deutschtitle= ("@deutschbot's täglicher Bericht: "+str(date))
 
-    #uncomment this to post automatically:
-    steem=Steem(keys="postingkeyhere",node="wss://gtg.steem.house:8090")
-    steem.post(title=deutschtitle, body=report, author="deutschbot", category="deutsch", tags=["deutschbot"])
+#uncomment this to post automatically:
+    #steem=Steem(keys="postingkeyhere",node="wss://gtg.steem.house:8090")
+    #steem.post(title=deutschtitle, body=report, author="deutschbot", category="deutsch", tags=["deutschbot"])
 
 schedule.every().day.at("20:00").do(bericht)
 
