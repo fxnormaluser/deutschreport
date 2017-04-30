@@ -15,4 +15,4 @@ Use `header.txt` and `footer.txt` for a header and a footer.
 
 Customize the german language parts to match your desired report.
 
-If you want to post automatically, replace @deutschbot and `yourpostingkey` with your account and posting key n the according lines.
+If you want to post automatically, replace @deutschbot and `yourpostingkey` with your account and posting key in the according lines.
