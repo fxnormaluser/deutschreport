@@ -10,7 +10,7 @@ import schedule
 
 steem = Steem(node="wss://gtg.steem.house:8090")
 
-account=Account("deutschbot")
+account = Account("deutschbot")
 
 def bericht():
 
