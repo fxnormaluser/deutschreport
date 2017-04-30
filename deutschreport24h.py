@@ -54,13 +54,18 @@ def bericht():
                             total_rewards = total_rewards + reward
 
                         try:
-
-                            image=("![main_image](https://img1.steemit.com/256x256/" + post["json_metadata"].get("image")[0] +")")
-                
+                            imagelink =  post["json_metadata"].get("image")[0]
+                                            
                         except:
 
-                            image=("![main_image](https://img1.steemit.com/256x256/https://steem.io/images/steem.png)") 
+                            imagelink = "https://steem.io/images/steem.png)"
             
+                        if len(imagelink) > 100:
+
+                            imagelink = "https://steem.io/images/steem.png)"
+
+                        image=("![main_image](https://img1.steemit.com/256x256/" + imagelink +")")
+
                         post_title=(post["title"])
 
                         if "|" in post_title:
