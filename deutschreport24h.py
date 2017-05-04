@@ -60,13 +60,17 @@ def bericht():
 
                             imagelink = "https://steem.io/images/steem.png"
             
-                        if len(imagelink) > 100:
+                       if len(imagelink) > 100:
 
                             imagelink = "https://steem.io/images/steem.png"
 
-                        image=("![main_image](https://img1.steemit.com/256x256/" + imagelink +")")
+                        image=("![main_image](https://img1.steemit.com/128x256/" + imagelink +")")
+            
+                        post_title = (post["title"])
 
-                        post_title=(post["title"])
+                        if len(post_title) > 30:
+
+                            post_title = post_title[:30] + " ..." 
 
                         if "|" in post_title:
          
