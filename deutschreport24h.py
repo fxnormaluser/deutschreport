@@ -16,19 +16,20 @@ def bericht():
 
     main_report = ("|| Autor | Beitrag | $$$ |\n"+
                "| --- | --- | --- | --- |\n")
-
+    
+    trailing_in_minutes=1440
     total_rewards = 0
     total_posts = 0
-    trailing_24h_t = time.time() - datetime.timedelta(hours=24).total_seconds()
+    trailing_time = time.time() - datetime.timedelta(minutes=trailing_in_minutes).total_seconds()
 
     stoptime = time.time()
-    starttime = trailing_24h_t
+    starttime = trailing_time
 
     for i in account.history2(filter_by="vote", take=100000):
 
         timestamp = parse_time(i['timestamp']).timestamp()
 
-        if timestamp > trailing_24h_t:
+        if timestamp > trailing_time:
 
             if i["voter"]=="deutschbot":
 
