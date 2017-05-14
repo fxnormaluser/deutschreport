@@ -8,11 +8,11 @@ import time
 import datetime
 import schedule
 
-steem = Steem(node="wss://gtg.steem.house:8090")
-
 account = Account("deutschbot")
 
 def bericht():
+
+    steem = Steem(node="wss://gtg.steem.house:8090")
 
     main_report = ("|| Autor | Beitrag | $$$ |\n"+
                "| --- | --- | --- | --- |\n")
