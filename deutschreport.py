@@ -29,7 +29,7 @@ column_title_payout = '$$$'
 def report():
 
     with open('reportlayout.txt') as layout:
-    report_layout = layout.read()
+        report_layout = layout.read()
 
     steem = Steem(node = 'wss://gtg.steem.house:8090')
 
