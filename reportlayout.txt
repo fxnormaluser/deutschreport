@@ -1,0 +1,13 @@
+## @REPORT_AUTHOR_GOES_HERE's report
+#
+From: STARTTIME_GOES_HERE 
+Until: STOPTIME_GOES_HERE
+@REPORT_AUTHOR_GOES_HERE voted TOTAL_POSTS_GOES_HERE posts, by TOTAL_AUTHORS_GOES_HERE different authors. 
+Total potential payout: TOTAL_REWARDS_GOES_HERE 
+Average: AVERAGE_REWARDS_GOES_HERE 
+___
+#
+REPORT_GOES_HERE
+___
+#
+Every mentioned author gets 1/TOTAL_BENEFICIARIES_GOES_HERE of the payout.
