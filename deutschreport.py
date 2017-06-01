@@ -177,6 +177,7 @@ def report():
 
     steem=Steem(keys=report_author_key, node='wss://gtg.steem.house:8090') # instanciate again, for good measure
     
+    # uncomment this to post automatically
     """ steem.post(
               title=dated_report_title, 
               body=report, 
@@ -185,9 +186,9 @@ def report():
               beneficiaries = bene_list) 
     """
 
-    print(report)
+    #print(report) # this is to print the report to the screen
     
-    print('\nBeneficiaries:\n##############\n' + str(bene_list))     
+    #print('\nBeneficiaries:\n##############\n' + str(bene_list)) 
 
 def job():
     try:
