@@ -51,7 +51,7 @@ def report():
 
     author_list = []
 
-    for i in account.history_reverse(filter_by = "vote", batch_size = 100000):
+    for i in account.history_reverse(filter_by = "vote", batch_size = 10000):
 
         timestamp = parse_time(i['timestamp']).timestamp()
 
