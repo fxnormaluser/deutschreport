@@ -150,7 +150,7 @@ def report():
 
     for author in beneficiaries:
 
-        bene_dict = {}
+        bene_dict = OrderedDict()
         bene_weight = 10000 // len(beneficiaries)
         bene_rest = 10000 - (bene_weight * len(beneficiaries))
 
