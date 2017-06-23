@@ -148,12 +148,12 @@ def report():
     beneficiaries.append(report_author)
 
     bene_list = []
+    bene_weight = 10000 // len(beneficiaries)
+    bene_rest = 10000 - (bene_weight * len(beneficiaries))
 
     for author in beneficiaries:
 
         bene_dict = OrderedDict()
-        bene_weight = 10000 // len(beneficiaries)
-        bene_rest = 10000 - (bene_weight * len(beneficiaries))
 
         bene_dict['account'] = author
         bene_dict['weight'] = bene_weight
